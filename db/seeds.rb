@@ -18,9 +18,11 @@ departments = CSV.parse(csv_data, headers: true, encoding: "utf-8")
 departments.each do |row|
   # Populate the Department table
   d = Department.create(name: row["Department_Name"])
+  rand_num = rand(5..10)
 
-  10.times do
+  rand_num.times do
     name = Faker::Name.name
+
     d.students.create([{
                         name:     name,
                         gender:   Faker::Gender.binary_type,
