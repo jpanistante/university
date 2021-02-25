@@ -6,5 +6,7 @@ class DepartmentsController < ApplicationController
     # This will end up in the index view (html.erb)
   end
 
-  def show; end
+  def show
+    @department = Department.find(params[:id])
+  end
 end
