@@ -1,7 +1,7 @@
-<h1>All Departments</h1>
+<h1 class="tittle is-2">All Departments</h1>
 
-<ul>
+<ol class="ml-5">
 <% @departments.each do |d| %>
   <li><%= link_to d.name, d %></li>
 <% end %>
-</ul>
+</ol>

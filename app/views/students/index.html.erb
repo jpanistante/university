@@ -1,7 +1,7 @@
-<h1>All Students</h1>
+<h1 class="title is-2">All Students</h1>
 
 <ol class="ml-5">
-<% @students.each do |d| %>
-  <li><%= link_to d.name, d %></li>
+<% @students.each do |s| %>
+  <li><%= link_to s.name, s %></li>
 <% end %>
 </ol>
