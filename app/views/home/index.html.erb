@@ -1,0 +1,10 @@
+<div class="columns">
+  <div class="column">
+    <h2>Welcome!</h2><br>
+    <ol class="ml-5">
+      <% @departments.each do |department| %>
+        <li><%= link_to department.name, department %></li>
+      <% end %>
+    </ol>
+  </div>
+</div>
