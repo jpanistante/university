@@ -4,8 +4,8 @@
   This department has <%= @department.students.count %> students under it.
 </p>
 
-<ul>
+<div class="columns">
   <% @department.students.each do |row| %>
-    <li><%= link_to row.name, row %></li>
+    <div class="column row-name is-narrow"><%= link_to row.name, row %></div>
   <% end %>
-</ul>
+</div>
