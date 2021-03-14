@@ -1,0 +1,7 @@
+<p class="mb-5">Found <%= pluralize(@students.count, 'result/s') %> when searching for: <%= params[:keywords] %></p>
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= link_to student.name, student %></li>
+  <% end %>
+</ul>
